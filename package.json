@@ -1,6 +1,6 @@
 {
   "name": "mandelbrot-kanbasu",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fractal Madelbrot theme customized for Kanbasu documentation.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,8 @@
     "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
     "build:css": "npm run scss && npm run autoprefixer",
     "watch:css": "onchange 'assets/scss/**/*.scss' -- npm run build:css",
-    "start": "npm run scss && npm run watch:css"
+    "start": "npm run scss && npm run watch:css",
+    "build": "npm run build:css"
   },
   "author": "Benoît Burgener",
   "license": "MIT",
