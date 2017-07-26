@@ -1,0 +1,18 @@
+<div class="Header">
+  <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
+    {% include 'icons/close-nav.svg' %}
+    {% include 'icons/open-nav.svg' %}
+  </button>
+  <a href="{{ path('/') }}" class="Header-title" title="{{ frctl.get('project.title') | default('Component Library') }}" data-pjax>
+    <img src="{{ path('/_subtheme/img/logo.svg') }}" class="Header-logo">
+  </a>
+  <ul class="Header-menu">
+    {% if frctl.get('project.version') %}
+      <li class="Header-version">Version {{ frctl.get('project.version') }}</li>
+    {% endif %}
+    <li class="Header-star">
+      <a class="github-button" href="https://github.com/liip/kanbasu" data-size="large" data-show-count="true" aria-label="Star liip/kanbasu on GitHub">Star</a>
+      <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+    </li>
+  </ul>
+</div>
