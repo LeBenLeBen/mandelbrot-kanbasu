@@ -6,7 +6,7 @@ const mandelbrot = require('@frctl/mandelbrot');
  * Configure the theme
  */
 const subTheme = mandelbrot({
-  styles: ['/_subtheme/css/style.css'],
+  styles: ['/subtheme/css/style.css'],
   format: 'yaml',
   nav: ['docs', 'components'],
   panels: ['html', 'notes', 'resources', 'info']
@@ -20,7 +20,7 @@ subTheme.addLoadPath(__dirname + '/views');
 /*
  * Specify the static assets directory that contains the custom stylesheet.
  */
-subTheme.addStatic(__dirname + '/dist', '/_subtheme');
+subTheme.addStatic(__dirname + '/dist', '/subtheme');
 
 /*
  * Export the customised theme instance so it can be used in Fractal projects

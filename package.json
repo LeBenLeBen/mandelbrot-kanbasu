@@ -1,6 +1,6 @@
 {
   "name": "mandelbrot-kanbasu",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Fractal Madelbrot theme customized for Kanbasu documentation.",
   "main": "index.js",
   "scripts": {
